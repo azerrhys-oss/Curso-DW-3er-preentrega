@@ -14,7 +14,7 @@
     --color-text: #1e2a33;
     --color-background: #f7f9fb;
     --color-white: #ffffff;
-    --color-muted: rgb(81, 96, 107);
+    --color-muted: #51606b;
     --color-border: #d5dee5;
 }
 
@@ -24,15 +24,13 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
-    font-weight: 400;
     line-height: 1.6;
     color: var(--color-text);
     background-color: var(--color-background);
 }
 
 h1,
-h2,
-h3 {
+h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     line-height: 1.2;
@@ -47,22 +45,13 @@ h2 {
     font-size: 1.75rem;
 }
 
-h3 {
-    font-size: 1.25rem;
-}
-
-p,
-li {
-    font-size: 1rem;
-}
-
 a {
     font-weight: 700;
     color: var(--color-primary);
 }
 
 
-/* ---------- Encabezado y navegación (Flexbox) ---------- */
+/* ---------- Encabezado y navegación ---------- */
 
 .encabezado {
     display: flex;
@@ -80,41 +69,28 @@ a {
     align-items: center;
     gap: 12px;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.25rem;
     font-weight: 700;
     color: var(--color-primary);
 }
 
 .logo {
-    width: 56px;
-    height: 56px;
-    border: 2px solid var(--color-secondary);
+    width: 60px;
+    height: 60px;
 }
 
 .menu {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 20px;
 }
 
 .menu-item {
     display: flex;
 }
 
-.menu-enlace {
-    padding: 8px 14px;
-    font-size: 1.1rem;
-    color: var(--color-primary);
-}
 
-.activo {
-    color: var(--color-text);
-    background-color: var(--color-accent);
-}
-
-
-/* ---------- Contenido principal y secciones (Flexbox + Box Model) ---------- */
+/* ---------- Contenido principal y secciones ---------- */
 
 main {
     padding: 40px 20px;
@@ -132,60 +108,21 @@ section {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    gap: 40px;
     padding: 30px;
     background-color: var(--color-secondary);
-    border-left: 6px solid var(--color-accent);
 }
 
 .presentacion-texto {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     gap: 16px;
     flex: 1 1 300px;
 }
 
-figure {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
-    flex: 0 1 320px;
-}
-
-.destacado {
-    align-items: flex-start;
+.caja {
     padding: 30px;
     background-color: var(--color-white);
     border: 1px solid var(--color-border);
-}
-
-.llamado {
-    align-items: center;
-    padding: 30px;
-    background-color: var(--color-accent);
-}
-
-.tarjetas {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.tarjeta {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    flex: 1 1 250px;
-    padding: 20px;
-    background-color: var(--color-white);
-    border: 1px solid var(--color-border);
-    border-top: 4px solid var(--color-accent);
-}
-
-.enlace-final {
-    margin-top: auto;
 }
 
 .lista {
@@ -195,13 +132,16 @@ figure {
     padding-left: 20px;
 }
 
-.dato {
-    font-weight: 700;
-    color: var(--color-primary);
+
+/* ---------- Imágenes ---------- */
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    flex: 0 1 220px;
 }
-
-
-/* ---------- Imágenes y sus descripciones ---------- */
 
 img {
     width: 100%;
@@ -213,18 +153,7 @@ figcaption {
 }
 
 
-/* ---------- Enlaces y botones ---------- */
-
-.boton {
-    padding: 12px 24px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.1rem;
-    color: var(--color-white);
-    background-color: var(--color-primary);
-}
-
-
-/* ---------- Pie de página (Flexbox) ---------- */
+/* ---------- Pie de página ---------- */
 
 .pie {
     display: flex;
@@ -233,15 +162,12 @@ figcaption {
     flex-wrap: wrap;
     gap: 20px;
     padding: 20px;
-    font-size: 0.9rem;
     color: var(--color-white);
     background-color: var(--color-primary);
-    border-top: 4px solid var(--color-accent);
 }
 
 .redes {
     display: flex;
-    align-items: center;
     gap: 20px;
 }
 
